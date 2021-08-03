@@ -1,0 +1,24 @@
+.Detail {
+    text-align: center
+}
+
+.Detail-header {
+    display: flex;
+    background-color: #361F27;
+    color: whitesmoke;
+    justify-content: space-between;
+    font-size: 30px;    
+    font-family: -apple-system;
+    align-items: center;
+    padding-left: 40%;
+    padding-right: 10px;
+    border: 2px solid #912F56;
+    border-radius: 1px;
+}
+
+.PieChart{
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
