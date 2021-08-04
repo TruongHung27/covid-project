@@ -59,7 +59,7 @@ function BarChart()
     return(
         <div>
                 <header className="Detail-header">
-                {info.data}  : {covidInfo? dataState.current.Type : "Loading"}
+                {covidInfo? dataState.current.Type : "Loading"}
                 <Link className="PieChart" onClick={goBack}>Go Back</Link>
             </header> 
             {

@@ -18,12 +18,13 @@ function HomePage(){
     },[])
 
     return(
-        <MapContainer center={[20,-10]} zoom={3} scrollWheelZoom={false} >
+        <MapContainer center={[20,-10]} zoom={3}>
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          continuousWorld="false"
+          noWrap="true"
         />
-    
         {countryList ? 
           countryList.map((data) => <CustomMarker key={data.country} data={data}/>)
           :

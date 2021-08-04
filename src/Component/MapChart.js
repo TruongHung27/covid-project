@@ -64,9 +64,7 @@ function MapChart(props)
             chartEvents={chartEvents}
             mapsApiKey="AIzaSyBR0GkRCWLn3IybgN8EmiqjUEimhC0GBDk"
             rootProps={{ 'data-testid': '1' }}
-            /> 
-            :
-            ""  
+            />  
         </div>
     )
 }

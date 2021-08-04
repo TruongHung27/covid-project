@@ -44,7 +44,7 @@ function CustomMarker(props)
         marginTop: "5px",
     }
 
-    var position = [props.data.countryInfo.lat ? props.data.countryInfo.lat: 0 ,props.data.countryInfo.long ? props.data.countryInfo.long : 0]
+    var position = [props.data.countryInfo.lat ? props.data.countryInfo.lat : 0 ,props.data.countryInfo.long  ? props.data.countryInfo.long : 0]
 
 
 

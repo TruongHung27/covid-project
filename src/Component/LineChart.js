@@ -2,12 +2,10 @@ import React, { useEffect, useState , useRef } from "react"
 import { Chart } from "react-google-charts"
 import axios from "axios";
 import "./Detail.css"
-import { useLocation , Link, useHistory } from "react-router-dom";
 
 function LineChart(props)
 {
     const [covidInfo, setInfo] = useState();
-    let history = useHistory();
     const covidData = useRef()
 
     const Country = props.data.country;
@@ -24,9 +22,6 @@ function LineChart(props)
         fetchData();
     }, [])
 
-    console.log(covidInfo)
-
-   
         if(covidInfo){
             let temp = Object.entries(covidInfo.recovered)
             let temp2 = Object.entries(covidInfo.deaths)
@@ -43,7 +38,6 @@ function LineChart(props)
             }
             covidData.current = temp11
             covidData.current.unshift(['Date', 'recovered', 'deaths', 'cases'])
-            console.log(covidData)
         }
     
 
